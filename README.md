@@ -6,15 +6,17 @@ Libraries and tools included:
 
 - Support libraries
 - RecyclerViews and CardViews 
-- [RxJava](https://github.com/ReactiveX/RxJava) and [RxAndroid](https://github.com/ReactiveX/RxAndroid) 
+- [RxJava2](https://github.com/ReactiveX/RxJava) and [RxAndroid2](https://github.com/ReactiveX/RxAndroid) 
 - [Retrofit 2](http://square.github.io/retrofit/)
+- [Okhttp 3](https://github.com/square/okhttp)
 - [Dagger 2](http://google.github.io/dagger/)
-- [SqlBrite](https://github.com/square/sqlbrite)
 - [Butterknife](https://github.com/JakeWharton/butterknife)
+- [SqlBrite](https://github.com/square/sqlbrite)
 - [Timber](https://github.com/JakeWharton/timber)
 - [Glide](https://github.com/bumptech/glide)
-- [Otto](http://square.github.io/otto/) event bus
-- Functional tests with [Espresso](https://code.google.com/p/android-test-kit/wiki/Espresso)
+- [RxBus](https://github.com/AndroidKnife/RxBus/) event bus
+###### Functional tests with
+- [Espresso](https://code.google.com/p/android-test-kit/wiki/Espresso)
 - [Robolectric](http://robolectric.org/)
 - [Mockito](http://mockito.org/)
 - [Checkstyle](http://checkstyle.sourceforge.net/), [PMD](https://pmd.github.io/) and [Findbugs](http://findbugs.sourceforge.net/) for code analysis
@@ -55,13 +57,13 @@ To run **unit** tests on your machine:
 
 ``` 
 ./gradlew test
-``` 
+```
 
 To run **functional** tests on connected devices:
 
 ``` 
 ./gradlew connectedAndroidTest
-``` 
+```
 
 Note: For Android Studio to use syntax highlighting for Automated tests and Unit tests you **must** switch the Build Variant to the desired mode.
 
@@ -98,7 +100,7 @@ To ensure that your code is valid and stable use check:
 This will run all the code analysis tools and unit tests in the following order:
 
 ![Check Diagram](images/check-task-diagram.png)
- 
+
 ## Distribution
 
 The project can be distributed using either [Crashlytics](http://support.crashlytics.com/knowledgebase/articles/388925-beta-distributions-with-gradle) or the [Google Play Store](https://github.com/Triple-T/gradle-play-publisher).
